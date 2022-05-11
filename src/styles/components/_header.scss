@@ -1,0 +1,25 @@
+@import '../utils/variables.scss';
+
+@mixin header_style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    & > img {
+            width: 7rem;
+            margin-bottom: $spacing-lg;
+            margin-top: $spacing-md;
+        }
+        /*& > .user{
+            display: flex;
+            & > p {
+                color: $text-color;
+                margin-right: $spacing-md;
+            }
+        }*/
+}
+
+header{
+    background-color: $background-color;
+    @include header_style();
+}
